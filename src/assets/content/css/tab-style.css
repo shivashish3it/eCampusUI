@@ -1,0 +1,95 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+    font-family: 'OpenSansRegular',Helvetica,Arial,sans-serif!important;
+    word-wrap: break-word;
+    font-smooth: always;
+    -webkit-font-smooth: always;
+    text-rendering: optimizelegibility;
+    -webkit-text-rendering: optimizelegibility;
+    word-wrap: break-word;
+    letter-spacing: 0.3px!important;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    -webkit-text-rendering: optimizeSpeed;
+    font-size: 13px!important;
+    line-height: normal;
+    text-align: left;
+    line-height: 18px;
+    background-image: url(/images/body_bc.jpg);
+    background-size: cover;
+}
+
+#tabs
+{
+  overflow: auto;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#tabs li
+{
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#tabs a
+{   
+    background: #c9252b;  
+    color: #fff;
+    float: left;
+    font: bold 12px/35px 'Lucida sans',Verdana, Geneva, sans-serif;
+    height: 35px;
+    padding: 0 30px;
+    text-decoration: none;
+	margin-right:10px;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+}
+
+#tabs a:hover
+{
+    background: #6e111c;   
+}
+
+#tabs a:focus
+{
+    outline: 0;
+}
+
+#tabs #current a
+{
+   background:#972230;
+    text-shadow: none;    
+    color: #fff;
+}
+
+#content
+{
+    background-color: #fff;
+   border:1px solid #dedede;
+    padding: 15px;
+}
+
+/* Remove the rule below if you want the content to be "organic" 
+#content div
+{
+    height: 220px;
+}*/
+
+/* --- */
+#about
+{
+    color: #999;
+}
+
+#about a
+{
+    color: #eee;
+}
+

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/RobotoRegular.eot');
+    src: url('../fonts/RobotoRegular.eot') format('embedded-opentype'),
+         url('../fonts/RobotoRegular.woff2') format('woff2'),
+         url('../fonts/RobotoRegular.woff') format('woff'),
+         url('../fonts/RobotoRegular.ttf') format('truetype'),
+         url('../fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'roboto_light';
+    src: url('../fonts/roboto_light.eot');
+    src: url('../fonts/roboto_light.eot') format('embedded-opentype'),
+         url('../fonts/roboto_light.woff2') format('woff2'),
+         url('../fonts/roboto_light.woff') format('woff'),
+         url('../fonts/roboto_light.ttf') format('truetype'),
+         url('../fonts/roboto_light.svg#roboto_light') format('svg');
+}
+
+@font-face {
+    font-family: 'raleway_medium';
+    src: url('../fonts/raleway_medium.eot');
+    src: url('../fonts/raleway_medium.eot') format('embedded-opentype'),
+         url('../fonts/raleway_medium.woff2') format('woff2'),
+         url('../fonts/raleway_medium.woff') format('woff'),
+         url('../fonts/raleway_medium.ttf') format('truetype'),
+         url('../fonts/raleway_medium.svg#raleway_medium') format('svg');
+}
+
+@font-face {
+    font-family: 'raleway_regular';
+    src: url('../fonts/raleway_regular.eot');
+    src: url('../fonts/raleway_regular.eot') format('embedded-opentype'),
+         url('../fonts/raleway_regular.woff2') format('woff2'),
+         url('../fonts/raleway_regular.woff') format('woff'),
+         url('../fonts/raleway_regular.ttf') format('truetype'),
+         url('../fonts/raleway_regular.svg#raleway_regular') format('svg');
+}
+
+
+
+
+

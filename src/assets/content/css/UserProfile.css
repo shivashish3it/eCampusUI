@@ -1,0 +1,52 @@
+﻿
+.cnt_head {
+    position: relative;
+        width: 100%;
+    float: left;margin-top: 12px;
+}
+
+.heading_menu {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+ul.heading_menu li {
+    
+        height: 100%;
+            float: left;
+        margin: 0 1px 0 0;
+}
+
+    ul.heading_menu li:last-of-type {margin:0;    }
+
+   ul.heading_menu li a {
+       background: #ba683e;
+    color: #fff;
+    padding: 0 8px 0 8px;
+    border-radius: 0;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+    		
+#MainDiv {margin-bottom:25px; }
+.hr_general_tab {width:100%; float:left; }
+    .hr_general_tab ul { width:100%; float:left; margin:0; padding:0;    }
+        .hr_general_tab ul li {     display: inline-block;
+    padding: 2px 8px 2px 8px;
+    background: #333333;
+    color: #fff;
+    margin: 0 0 2px 0;
+        border-radius: 0;}
+
+.table_mrgn .table-responsive {margin-bottom:4px; position: relative;}
+.table-responsive .hr_general_tab{text-align:center;}
+.table-responsive .hr_general_tab li{float:right; display:inline-block;     background: #333333;  min-width: 170px;}
+.new_d{position:absolute;}
+.MiddleSection .table-striped tbody tr td table tr{background-color:transparent!important;}

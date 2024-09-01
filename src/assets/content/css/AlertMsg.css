@@ -1,0 +1,57 @@
+﻿.alert-box-div {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+
+    .alert-box-div .alert-box {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 300px;
+        margin: -110px 0 0 -150px;
+        border-radius: 5px;
+        box-shadow: 0 0 6px rgba(0, 33, 70, 0.1), 0 7px 25px rgba(17, 38, 84, 0.4);
+        background: #fff;
+        border: 1px solid #36424b;
+        overflow: hidden;
+    }
+
+    .alert-box-div .smartAlertBody {
+        width: 100%;
+        float: left;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+        .alert-box-div .smartAlertBody img {
+            display: inline-block;
+        }
+
+        .alert-box-div .smartAlertBody span {
+            float: left;
+            padding: 10px 0px 5px 6px;
+            width: 100%;
+        }
+
+    .alert-box-div .smartAlertButtons {
+        background: #f9fafe;
+        border-top: 1px solid #dfeaf4;
+        padding: 12px 13px 13px;
+        float: left;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+
+        .alert-box-div .smartAlertButtons.Cancel {
+            width: 50%;
+            border-right: 1px solid #ccc;
+        }
