@@ -1,22 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+//import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ConsumeAPIService } from '../SharedResources/consume-api.service';
-// import * as $ from 'jquery';
-//import { Component, ViewChild } from '@angular/core';
 
+import { Component, ViewChild } from '@angular/core';
+import { PopupModalComponent } from '../popup-modal/popup-modal.component'; // Adjust path as needed
+
+declare var $:any;
 
 @Component({
     selector: 'Loginxxx',
     templateUrl: './Loginxxx.component.html',
-    // "styles": ["./assets/content/css/jquery-confirm.min.css"]
-// styleUrls: ['/src/assets/content/css/jquery-confirm.min.css']
+styleUrls: ['./Loginxxx.component.css']
   })
   
-
-  export class LoginxxxComponent implements OnInit {
+  export class LoginxxxComponent{
   UserName: string="";
   Password: any;
-    credentials = { username: '', password: '' };
+  credentials = { username: '', password: '' };
+  
+  @ViewChild('globalModal') globalModal!: PopupModalComponent;
     constructor(private router: Router,public consumeAPI: ConsumeAPIService) { 
   }
     ngOnInit(){
@@ -24,30 +26,27 @@ import { ConsumeAPIService } from '../SharedResources/consume-api.service';
     onbtnLogin() {  
       this.Login();
     }  
-
+    //errorMsg=""
     Login() {
+      let message='';
       var userName = this.credentials.username;
       var password = this.credentials.password;
       if(userName == "" || userName == null)
       {
-        alert("Enter User Name");
+        message="Enter the User Name !";
+        this.globalModal.message = message;
+         $('#myModal').modal('toggle')     
+      //  this.globalModal.open();
         return;
       }
       if(password == "" || password == null)
       {
         //alert("Enter Password");
-        //($ as any).confirm();
-      //   $.confirm({
-      //     icon: 'fa fa-warning',
-      //     title: 'Warning !',                 
-      //     theme: 'bootstrap',
-      //     content: 'Enter User Name / Password !',
-      //     type:'red',
-      //     closeIcon: true,                 
-      //     buttons: {Ok: {text: 'Ok', btnClass: 'btn-orange'},
-      //     }
-      // });
-        return;
+      message="Enter the Password !";
+      this.globalModal.message = message;
+      $('#myModal').modal('toggle')
+      //this.globalModal.open();
+      return;       
       }
       this.consumeAPI.Login(this.credentials).subscribe(
         (res: any) => {
@@ -118,8 +117,8 @@ import { ConsumeAPIService } from '../SharedResources/consume-api.service';
       this.router.navigate(['/forgotpassword']);
     }  
 
-    onDialogOk() {
-      // Handle the OK action from the dialog, if necessary
-      console.log('Dialog OK clicked');
-    }
-}
+    // onDialogOk() {
+    //   // Handle the OK action from the dialog, if necessary
+    //   console.log('Dialog OK clicked');
+    // }
+}            

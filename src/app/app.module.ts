@@ -17,6 +17,8 @@ import { NoLayoutComponent } from './UserControls/commonLayout/no-layout.compone
 import { registrationComponent} from './Registration/registration.component';
 //import { MyProfileComponent} from './admin/myprofile.component';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { PopupModalComponent } from './popup-modal/popup-modal.component';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
 //import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -31,7 +33,9 @@ import { NgSelectModule } from '@ng-select/ng-select';
     NoLayoutComponent,
     registrationComponent,
     LoginComponent,
-    LoginxxxComponent
+    LoginxxxComponent,
+    PopupModalComponent,
+    ConfirmDialogComponent
     //MyProfileComponent
   ],
   imports: [

@@ -1,84 +1,12 @@
-<link href="/assets/content/css/jquery-confirm.min.css" rel="stylesheet" />
-<style>
-#header{
-    width: auto; padding: 10px 15px 90px 15px; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
-}
-#tagLine{
-    margin-top: -3px;margin-left: 80px;color:#02ACE8;font-size: 14px !important;font-weight:bold !important;
-}
+<!-- <link href="/assets/content/css/jquery-confirm.min.css" rel="stylesheet" /> -->
 
-.form-field {
-    border-radius: 0px;
-    height: 37px;
-    margin: 15px 10px 15px 0;
-    margin-right: 0px;
-    background: #fff!important;
-/*    border-color: rgba(255, 255, 255,.55);
-*/    color: #000 !important;
-    /* max-width: 300px; */
-    float: left;
-    margin-right: 10px;
-    border:1px Solid #2475AA !important; 
-	 color:#333333; 
-	 font-family:Arial; 
-	 font-size:12px; 
-	 width:290px;
-/*	 border-radius:3px;
-*/	 -moz-border-radius:3px;
-}
-.form-field:hover
-{
-	 border:2px solid Orange !important; 
-	 /*border-shadow:2px solid gray;*/
-}
-.btn1 {
-    display: block;
-    width: auto;
-    float: left;
-    /* background: #3c8dbc; */
-    padding: 8px 28px;
-    font-size: 12px;
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 4px;
-    margin: 14px 5px;
-    line-height: 22px;
-}
-#footer 
-    {  
-    text-align: center;	
-	/*--background:#2475AA;----*/
-	background-color:#3c8dbc;
-    color:#FFF;
-    height:auto;
-    width:100%;
-    overflow:hidden;
-    /* border-top-style: solid; 
-    border-top-width: thin; 
-    border-top-color: #333333; */
-    clear: both;
-    padding : 15px;
-        /*margin:0px;*/
-        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16), 2px 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
-}
-.company_link
-{
-	color:#ffffff; font-family:Arial; font-size:12px; 
-}
-.company_link:hover
-{
-   color:#ffffff;
-   font-weight:bold;
-   text-decoration :none;
-}</style>
-
+<app-popup-modal #globalModal title="Error !"></app-popup-modal>
 
 <div id="header">
     <div style="float:left;width: 20%; text-align: center; padding:0px 0px 0px 0px; margin-left:3px">
         <img src="./assets/content/imgs/e-campus.png" alt = "" height = "70" width = "300"/>
-<p id="tagLine">Information @ your Finger Tips...</p>
-         </div>
+        <p id="tagLine">Information &#64; your Finger Tips...</p>
+    </div>
 
 <div style="margin-left:20%;width: 80%;">
 <table align="left" style="margin-left: 15%;width: 65%;">
@@ -108,4 +36,33 @@
 <div id = "footer">
     <span class = "links"><p>© 2022 All Rights Reserved <br/>Powered by : <a href="www.ckt.com" class="company_link" >CloudKEY Technologies</a></p></span>
 </div>
-<script src="/assets/content/js/jquery-confirm.min.js"></script>
+<!-- <script src="/assets/content/js/jquery-confirm.min.js"></script> -->
+
+
+<!-- Bootstrap modal popup for Message Box. -->
+
+<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+ aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title"   
+         id="myModalLabel">Warning !</h4>
+      </div>
+
+      <div class="modal-body">
+        <h3 class="text-center">{{errorMsg}}</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+   

@@ -1,0 +1,26 @@
+.modal-dialog
+  margin-top: 200px !important
+
+.close
+  float: right
+  font-size: 34px !important
+  font-weight: 500 !important
+  line-height: 1
+  color: red
+  text-shadow: 0 1px 0 #fff
+  filter: alpha(opacity=20)
+  opacity: 0.5
+
+// Custom animation for sliding in from the right
+@keyframes slideInLeft
+  from
+    transform: translateX(-100%)
+    opacity: 0
+  to
+    transform: translateY(0)
+    opacity: 1
+
+// Apply the animation to the modal
+.modal.fade .modal-dialog
+  transition: none // Disable the default Bootstrap transition
+  animation: slideInLeft 0.1s forwards
